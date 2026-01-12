@@ -4,7 +4,7 @@ import numpy as np
 
 model=joblib.load("Salaryprediction")
 st.title("Salary Prediction App")
-years=st.number_input("Enter the work Experience",min_values=0,step=1,format="%d")
+years=st.number_input("Enter the work Experience",min_values=0,max_values,step=1,format="%d")
 jobrate=st.number_input("Enter the job Rate")
 
 if st.button("Predict"):
